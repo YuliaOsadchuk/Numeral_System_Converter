@@ -1,7 +1,12 @@
 package converter;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("10 = 0b1010");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int octopus = Integer.parseInt(Integer.toOctalString(n));
+        System.out.println(octopus % 10);
     }
 }
