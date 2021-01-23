@@ -18,6 +18,8 @@
 	<li>Convert the fractional part into decimal using the following formula:<span class="math-tex">\[decimalValue = {c \over base^1} + {d \over base^2} + {e \over base^3} + {f \over base^4}\]</span></li>
 </ul>
 
+<p>where <span class="math-tex">\(base\)</span> is a base of the number you want to convert into decimal.</p>
+
 <p>The more digits (letters) in the fractional part, the more addends in the formula. If the fractional part has letters, then you should use their number representation: ‘a’ – 10, ‘b’ – 11, c – ‘12’, and so on.</p>
 
 <p>As a result, you should get a decimal number no greater than 1. If it is greater than 1, you did something wrong.</p>
@@ -38,7 +40,7 @@
 
 <p>Take the fractional part from the result of the multiplication and multiply it by the new base again: <span class="math-tex">\(0.8192 * 19 = 15.5648\)</span>. For numbers greater than 9, you should use their letter representation: 10 – ‘a’, 11 – ‘b’, 12 – ‘c’, and so on. In this case, the second digit (letter) is <strong>f</strong> <strong>(15)</strong>.</p>
 
-<p>To calculate the rest of the digits (letters), repeat this action. In this stage, your program should output only 5 digits (letters) in the fractional part: </p>
+<p>To calculate the rest of the digits (letters), you should repeat this action. In this stage, your program should output only 5 digits (letters) in the fractional part: </p>
 
 <p><span class="math-tex">\(0.5648 * 19 = 10.7312 \text{ (a)}\\ 0.7312 * 19 = 13.8928 \text{ (d)}\\ 0.8928 * 19 = 16.9632 \text{ (g)}\\\)</span></p>
 
